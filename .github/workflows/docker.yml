@@ -1,5 +1,9 @@
 name: Docker
-on: workflow_call
+# on: workflow_call
+on:
+  push:
+    branches:
+      - wm/docker-multi-arch
 
 env:
   REGISTRY: ghcr.io
